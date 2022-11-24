@@ -1,6 +1,10 @@
 package com.example.Mongodb.resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class IdeaRequest {
+    @Autowired
+    IdeaRequest ideaRequest;
     private String name;
 
     private String topic;
@@ -15,6 +19,9 @@ public class IdeaRequest {
         this.topic = topic;
         this.description = description;
     }
+
+
+
 
     public String getName() {
         return name;

@@ -22,12 +22,6 @@ public class Idea {
         this.description = description;
     }
 
-    public String findByName(String name) {
-         if(this.name == name) {
-             return name;
-         }
-    }
-
     public String getId() {
         return id;
     }
